@@ -1,0 +1,30 @@
+ body {
+            background-color: #000000;
+            color: #e2e2e2;
+        }
+        .wwe-card {
+            background-color: #1A1A1A;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+        .wwe-card:hover {
+            border: 1px solid #333333;
+            box-shadow: 0 10px 40px rgba(226, 16, 23, 0.1);
+        }
+        .wwe-btn-primary {
+            background-color: #E21017;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            text-transform: uppercase;
+            font-family: 'Archivo Narrow', sans-serif;
+            font-weight: 700;
+            transition: background-color 0.2s;
+        }
+        .wwe-btn-primary:hover {
+            background-color: #c0000d;
+        }
+        .image-gradient {
+            background: linear-gradient(to top, rgba(26,26,26,1) 0%, rgba(26,26,26,0) 100%);
+        }

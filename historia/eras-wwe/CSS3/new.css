@@ -1,0 +1,16 @@
+ body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .glow-red {
+            box-shadow: 0 0 15px rgba(226, 16, 23, 0.2);
+        }
+        
+        .glow-red:hover {
+            box-shadow: 0 0 25px rgba(226, 16, 23, 0.4);
+        }
+        
+        .card-image-gradient {
+            background: linear-gradient(to top, #1A1A1A 0%, transparent 100%);
+        }

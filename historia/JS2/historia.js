@@ -1,0 +1,90 @@
+tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#454747",
+                        "primary-fixed-dim": "#ffb4aa",
+                        "surface-bright": "#393939",
+                        "inverse-surface": "#e2e2e2",
+                        "secondary-container": "#454747",
+                        "tertiary-fixed": "#e5e2e1",
+                        "on-primary-fixed": "#410001",
+                        "inverse-primary": "#c0000d",
+                        "on-primary-fixed-variant": "#930007",
+                        "primary-container": "#e21017",
+                        "on-secondary": "#2f3131",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-primary-container": "#fff5f4",
+                        "on-primary": "#690003",
+                        "surface-container-highest": "#353535",
+                        "background": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "error": "#ffb4ab",
+                        "surface-container-low": "#1b1b1b",
+                        "surface-container-high": "#2a2a2a",
+                        "surface": "#131313",
+                        "secondary-fixed": "#e2e2e2",
+                        "outline-variant": "#5e3f3b",
+                        "on-tertiary": "#313030",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "inverse-on-surface": "#303030",
+                        "outline": "#af8782",
+                        "on-tertiary-container": "#faf6f6",
+                        "on-error": "#690005",
+                        "on-surface-variant": "#e8bcb7",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "secondary": "#c6c6c7",
+                        "primary-fixed": "#ffdad5",
+                        "surface-dim": "#131313",
+                        "primary": "#ffb4aa",
+                        "tertiary": "#c8c6c5",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "on-surface": "#e2e2e2",
+                        "surface-container": "#1f1f1f",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-background": "#e2e2e2",
+                        "tertiary-container": "#727171",
+                        "surface-tint": "#ffb4aa",
+                        "error-container": "#93000a",
+                        "surface-variant": "#353535"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-md": "1rem",
+                        "stack-lg": "2rem",
+                        "container-max": "1320px",
+                        "stack-sm": "0.5rem",
+                        "section-padding": "5rem",
+                        "gutter": "1.5rem"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Archivo Narrow"],
+                        "headline-lg-mobile": ["Archivo Narrow"],
+                        "headline-md": ["Archivo Narrow"],
+                        "label-caps": ["Archivo Narrow"],
+                        "headline-lg": ["Archivo Narrow"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["14px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+
+         document.getElementById('current-year').textContent = new Date().getFullYear();

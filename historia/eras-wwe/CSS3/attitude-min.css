@@ -1,0 +1,1 @@
+body{background-color:#000000;color:#e2e2e2}.bento-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem}.wwe-card{background-color:#1A1A1A;border-radius:.5rem;box-shadow:0 10px 30px rgba(0,0,0,.5);transition:all .3s ease}.wwe-card:hover{box-shadow:0 10px 40px rgba(226,16,23,.15);border:1px solid rgba(226,16,23,.3)}

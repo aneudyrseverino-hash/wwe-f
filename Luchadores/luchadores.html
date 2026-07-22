@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luchadores - Universo Ficticio</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="CSS/luchadores.css">
+<script src="load-shared2.js" defer></script>
+</head>
+<body bg class="bg-dark text-light">
+<main>
+
+<div data-shared-header></div>
+
+<!-- BEGIN: Section 1 - Intro -->
+<section class="intro-section bg-dark-lowest" data-purpose="intro-section">
+    <div class="glow-bg"></div>
+    <div class="container position-relative z-1">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <h1 class="intro-title">Luchadores</h1>
+                <p class="fs-5 mb-4 lh-lg">Adéntrate en el universo de los titanes del cuadrilátero. Descubre a las superestrellas que han forjado un legado de sudor, sangre y gloria. Desde los técnicos más refinados hasta los monstruos más imparables, esta es la enciclopedia definitiva de los guerreros del ring.</p>
+                <small class="d-inline-block text-warning border border-surface-highest px-3 py-2 rounded">Aviso: Todo el contenido, personajes y biografías en esta página son puramente ficticios y creados con fines de entretenimiento.</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- END: Section 1 - Intro -->
+<!-- BEGIN: Section 2 - Top Rankings -->
+<section class="py-5" data-purpose="top-rankings">
+    <div class="container py-5">
+        <h2 class="display-5 fw-bold text-center mb-5 text-primary text-uppercase tracking-wide">Top Luchadores Más Poderosos</h2>
+        <div class="row position-relative g-5 g-lg-0">
+            <div class="vertical-divider"></div>
+            <!-- Men Column -->
+            <div class="col-12 col-lg-6 col-men">
+                <h3 class="h4 fw-semibold mb-4 text-center border-bottom border-surface-highest pb-3">Categoría Masculina</h3>
+                <div class="row g-4">
+                <script>
+ const maleData = [
+        { img: 'images/undertaker.png', name: 'The Undertaker (El Fenómeno)', desc: 'Control sobre los rayos y el fuego, teletransportación, capacidad de "resucitar" e invulnerabilidad casi absoluta. Su racha de 21-0 en WrestleMania lo consagra como el jefe final supremo en la narrativa de la lucha libre.' },
+        { img: 'images/lesnar.png', name: 'Brock Lesnar', desc: 'Fue la fuerza que rompió la racha del Undertaker. En la historia, es capaz de lanzar en F-5 a gigantes como Big Show y Mark Henry como si fueran muñecos de trapo, además de haber colapsado el cuadrilátero con su impacto.' },
+        { img: 'images/ultimate.png', name: 'The Ultimate Warrior', desc: 'En la cumbre del kayfabe de los años 80 y 90, poseía una resistencia prácticamente infinita. Venció limpiamente a Hulk Hogan en WrestleMania VI y casi nunca fue cubierto de manera limpia en su carrera.' },
+        { img: 'images/goldberg.png', name: 'Goldberg', desc: 'Famoso por su racha de 173-0 en WCW/WWE. Su personaje aniquilaba a sus rivales en segundos con un Spear devastador y levantaba en Jackhammer a luchadores de más de 200 kg sin esfuerzo.' },
+        { img: 'images/mark.png', name: 'Mark Henry', desc: 'Narrativamente dotado de una fuerza sobrehumana: rompía candados y cadenas de acero con las manos peladas, arrastraba camiones en televisión y creó el "Hall of Pain" para destrozar a toda la división pesada.' },
+        { img: 'images/andre.png', name: 'Andre the Giant', desc: 'Andre fue promocionado como invicto durante 15 años, retratado como fuerzas de la naturaleza capaces de volcar automóviles, dominar a cuatro o cinco luchadores a la vez y requerir alianzas masivas para ser derribados.' },
+        { img: 'images/hogan.png', name: 'Hulk Hogan', desc: 'Cuando entraba en su estado de "Hulk Up", su personaje se volvía inmune al dolor. Su hazaña definitiva fue levantar y azotar (bodyslam) a Andre the Giant frente a más de 90,000 personas en WrestleMania III.' },
+        { img: 'images/braun.png', name: 'Braun Strowman', desc: 'En el apartado de fuerza física destructiva en pantalla, pocos lo superan: volcó ambulancias, volcó un camión de carga completo con sus manos, derribó escenarios de televisión y rompió jaulas de acero a pura fuerza.' },
+        { img: 'https://static.wikia.nocookie.net/bwwe/images/0/05/The_Fiend.png/revision/latest/scale-to-width-down/284?cb=20220303032810', name: 'The Fiend', desc: 'The Fiend (Bray Wyatt, que absorbía castigo físico irreal, soportando docenas de remates mortales sin inmutarse) representa el terror y la resistencia sobrenatural.' },
+        { img: 'images/Ultimate.png', name: 'Roman Reigns', desc: 'Roman Reigns se consolidó como el jefe supremo moderno con un reinado histórico de más de 1,300 días, sobreviviendo al castigo de todos los demás estelares de la compañía.' }
+     ];
+ document.write(maleData.map((w, i) => `<div class="col-12 col-md-6 col-lg-12"> <article class="ranking-card"> <img src="${w.img}" alt="${w.name}" loading="lazy"> <div class="ranking-overlay"></div> <div class="ranking-content"> <span class="ranking-number">#${i+1}</span> <h4 class="h3 fw-bold text-white mb-2">${w.name}</h4> <p class="ranking-desc">${w.desc}</p>
+            </div>
+                </article>
+                    </div>`).join(''));
+                  </script>
+                </div>
+            </div>
+
+   <!-- Women Column -->
+   <div class="col-12 col-lg-6 col-women">
+   <h3 class="h4 fw-semibold mb-4 text-center border-bottom border-surface-highest pb-3">Categoría Femenina</h3>
+   <div class="row g-4">
+<script>
+    const femaleData = [
+            { img: 'images/chyna.png', name: 'Chyna (La Novena Maravilla del Mundo)', desc: 'El estándar de oro del poder femenino en la WWE. Fue la primera mujer en clasificar al King of the Ring, ingresar al Royal Rumble masculino y ganar el Campeonato Intercontinental (en dos ocasiones). Dominó a hombres y mujeres por igual.' },
+            { img: 'images/rousey.jpg', name: 'Ronda Rousey', desc: 'Presentada como una máquina de someter indestructible. Su llave Armbar se vendió como un castigo capaz de romper brazos al instante, sometiendo a toda la plantilla femenina prácticamente sin despeinarse durante sus primeros años.' },
+            { img: 'images/bianca.png', name: 'Bianca Belair', desc: 'Su personaje se define por ser la más fuerte (StrongeST). Ha realizado hazañas de fuerza pura increíbles en vivo, como cargar a Otis (de más de 150 kg) sobre sus hombros o aplicar un KOD doble a dos luchadoras al mismo tiempo.' },
+            { img: 'https://static.wikia.nocookie.net/wwedivas/images/6/60/RheaRipley_01292024RF_10886_Profile--5c3f0cc61fb48c8569da48728aee05e4.png/revision/latest?cb=20240805234449', name: 'Rhea Ripley', desc: 'Líder narrativa de The Judgment Day. En la historia no solo ha aplastado a la división femenina con su Riptide, sino que ha azotado físicamente a luchadores masculinos de gran tamaño como Luke Gallows y Solo Sikoa.' },
+            { img: 'images/beth.jpg', name: 'Beth Phoenix', desc: 'En una época donde la división femenina no solía enfocarse en la fuerza, Beth levantaba a dos competidoras a la vez para aplicar su Glam Slam. Fue la segunda mujer en la historia en ingresar al Royal Rumble masculino.' },
+            { img: 'images/nia.png', name: 'Nia Jax', desc: 'Retratada narrativamente como un "monstruo" inamovible. Su tamaño y peso le permitieron dominar combates en desventaja y aplastar a sus rivales con simples lanzamientos (Samoan Drops) e impactos de cadera.' },
+            { img: 'images/asuka.png', name: 'Asuka', desc: 'Sostuvo la racha invicta más larga en la historia moderna de la WWE (más de 900 días sumando NXT y el elenco principal). En kayfabe, sus patadas y llaves de sumisión dejaban fuera de combate a sus rivales casi de inmediato.' },
+            { img: 'images/kharma.png', name: 'Kharma', desc: 'Aunque su paso por la empresa fue breve, su personaje fue construido como una amenaza aterradora que destruía a múltiples luchadoras a la vez en segundos mediante su Implant Buster.' },
+            { img: 'images/jade.png', name: 'Jade Cargill', desc: 'Presentada desde su debut como una fuerza de la naturaleza. Su personaje destruye a sus oponentes lanzándolas por los aires con su remate Jaded, mostrando una facilidad pasmosa para levantar a cualquier rival.' },
+            { img: 'images/charlotte.png', name: 'Charlotte Flair (La Reina)', desc: '14 veces campeona mundial. Narrativamente posee una resistencia sobrehumana al dolor y la capacidad de revertir cualquier situación límite con su llave Figure Eight, habiendo derrotado a cada superestrella de su era.' }
+        ];
+    document.write(femaleData.map((w, i) => `<div class="col-12 col-md-6 col-lg-12"> <article class="ranking-card"> <img src="${w.img}" alt="${w.name}" loading="lazy"> <div class="ranking-overlay"></div> <div class="ranking-content"> <span class="ranking-number">#${i+1}</span> <h4 class="h3 fw-bold text-white mb-2">${w.name}</h4> <p class="ranking-desc">${w.desc}</p> 
+        </div> 
+            </article>
+                    </div>`).join(''));
+            </script>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div data-shared-footer></div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+    });
+</script>
+</body></html>

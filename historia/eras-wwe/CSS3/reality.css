@@ -1,0 +1,9 @@
+.material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Subdued glow effect for dark mode elements */
+        .wwe-glow-hover:hover {
+            box-shadow: 0 0 15px rgba(226, 16, 23, 0.3);
+            border-color: #e21017;
+            transition: all 0.3s ease;
+        }
