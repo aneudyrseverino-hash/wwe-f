@@ -1,0 +1,182 @@
+:root {
+        --bs-primary: #ffc107;
+        --bs-body-bg: #121414;
+        --bs-body-color: #e2e2e2;
+        --surface-low: #1a1c1c;
+        --surface-container: #202223;
+        --surface-high: #2b2d2d;
+        --surface-highest: #363838;
+    }
+
+    body {
+        background-color: var(--bs-body-bg);
+        color: var(--bs-body-color);
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Selection styling */
+    ::selection {
+        background-color: var(--bs-primary);
+        color: #000;
+    }
+
+    .text-primary {
+        color: var(--bs-primary) !important;
+    }
+
+    .bg-surface-lowest {
+        background: linear-gradient(180deg, #0c0f0f 0%, var(--bs-body-bg) 100%);
+    }
+
+    .bg-surface-container {
+        background-color: var(--surface-container);
+    }
+    
+    .bg-surface-low {
+        background-color: var(--surface-low);
+    }
+
+    .border-surface-highest {
+        border-color: var(--surface-highest) !important;
+    }
+
+    /* Section 1 - Intro */
+    .intro-section {
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .glow-bg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 800px;
+        height: 800px;
+        background-color: rgba(255, 193, 7, 0.05);
+        border-radius: 50%;
+        filter: blur(120px);
+        pointer-events: none;
+    }
+
+    .intro-title {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        color:#d1d5db;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Section 2 - Top Rankings */
+    .vertical-divider {
+        display: none;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background-color: var(--surface-highest);
+        transform: translateX(-50%);
+    }
+
+    @media (min-width: 992px) {
+        .vertical-divider {
+            display: block;
+        }
+        .col-men {
+            padding-right: 3rem;
+        }
+        .col-women {
+            padding-left: 3rem;
+        }
+    }
+
+    .ranking-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background-color: var(--surface-container);
+        cursor: pointer;
+        transition: all 0.4s ease;
+        aspect-ratio: 16/9;
+    }
+
+    @media (min-width: 768px) {
+        .ranking-card { aspect-ratio: 1/1; }
+    }
+    @media (min-width: 992px) {
+        .ranking-card { aspect-ratio: 21/9; }
+    }
+
+    .ranking-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px -10px rgba(255, 193, 7, 0.2);
+    }
+
+    .ranking-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.7s ease;
+    }
+
+    .ranking-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .ranking-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, #000 0%, rgba(0,0,0,0.5) 50%, transparent 100%);
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+    }
+
+    .ranking-card:hover .ranking-overlay {
+        opacity: 1;
+    }
+
+    .ranking-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem;
+        transform: translateY(1rem);
+        transition: transform 0.3s ease-out;
+    }
+
+    .ranking-card:hover .ranking-content {
+        transform: translateY(0);
+    }
+
+    .ranking-number {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--bs-primary);
+        pointer-events: none;
+    }
+
+    .ranking-desc {
+        font-size: 0.875rem;
+        color: #d1d5db;
+        opacity: 0;
+        transition: opacity 0.3s ease 0.1s;
+        margin: 0;
+    }
+
+    .ranking-card:hover .ranking-desc {
+        opacity: 1;
+    }
